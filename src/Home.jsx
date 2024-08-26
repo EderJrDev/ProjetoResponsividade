@@ -39,7 +39,7 @@ function Home({ darkMode, setDarkMode }) {
         </Toolbar>
       </AppBar>
 
-      <Box display='flex' >
+      <Box display='flex' paddingTop={4} >
         <MenuLateral />
 
         <CenterGrid />

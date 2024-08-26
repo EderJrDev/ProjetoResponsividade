@@ -59,14 +59,12 @@ const CenterGrid = () => {
   ];
 
   return (
-    <Box sx={{ marginTop: 2, padding: 4, display: "flex" }}>
-      <Grid container spacing={2}>
+    <Box sx={{ padding: 4, display: "flex" }}>
+      <Grid container spacing={2} paddingTop={2}>
         <Grid item lg={9} md={8} sm={12} xs={12} sx={{ bgcolor: "none"}}>
           <Box
             sx={{
               position: "relative",
-              paddingTop: { lg: "2%", md: "5%", sm: "5%", xs: "10%" },
-              marginRight: 2,
               backgroundColor: "white",
             }}
           >
@@ -97,7 +95,7 @@ const CenterGrid = () => {
           <Grid container spacing={2} >
             {videos.map((item, index) => (
               <Grid item key={index}>
-                <Box sx={{ display: "flex", flexWrap: "wrap", bgcolor: "none", paddingTop: "4%" }}>
+                <Box sx={{ display: "flex", flexWrap: "wrap", bgcolor: "none" }}>
                   <img
                     style={{
                         position: "relative",
